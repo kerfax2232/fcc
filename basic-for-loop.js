@@ -23,3 +23,28 @@ var myArray = [];
 for (var i = 1; i <= 5; i++) {
   myArray.push(i);
 }
+
+// Can also do i+=2, 3, etc. to do various iteration numbers
+// i-=1,2,3 etc to decrease iteration in array
+
+//iterate through array in a for loop.  this adds content of the for loop up
+
+// Example
+var ourArr = [ 9, 10, 11, 12];
+var ourTotal = 0;
+
+for (var i = 0; i < ourArr.length; i++) {
+  ourTotal += ourArr[i];
+}
+
+// Setup
+var myArr = [ 2, 3, 4, 5, 6];
+
+// Only change code below this line
+
+
+var total = 0;
+
+for (var i = 0; i < myArr.length; i++) {
+  total += myArr[i];
+}
