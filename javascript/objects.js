@@ -90,3 +90,42 @@ var myCar = new Car();
 var myBike = new Bike(); // creates variable to create new Bike constructor
 myBike.setGear(4); // sets gear var at 4
 console.log(myBike.getGear); // returns gear as 4
+
+// Iterate over Arrays -- using map function
+// map allows for iteration across entire set of array
+
+var oldArray = [1,2,3,4,5];
+
+// Only change code below this line.
+
+// creates variable newArray that uses oldArray values and adds 3 to each value
+var newArray = oldArray.map(function(val) {
+  return val + 3;
+});
+
+console.log(oldArray);
+console.log(newArray);
+
+// Reduce method to condense arrays
+var array = [4,5,6,7,8];
+var singleVal = 0;
+
+// Only change code below this line.
+
+// Reduce cycles through reducing elements of an array to a single number
+singleVal = array.reduce(function(previousVal, currentVal) {
+ return previousVal + currentVal; // previousVal is prior value, currentVal can be specified but is sent to second array element
+}, 0);
+console.log(singleVal);
+
+
+// Sorting arrays
+
+var array = [1, 12, 21, 2];
+
+// Only change code below this line.
+
+// This sorts from biggest to smallest numbers.  To get smallest to biggest do a-b
+array.sort(function(a,b) {
+  return b - a;
+});
